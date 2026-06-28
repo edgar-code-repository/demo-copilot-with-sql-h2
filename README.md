@@ -187,7 +187,7 @@ cd demo-copilot-with-sql-h2
 ./gradlew bootRun
 ```
 
-The application will start on **http://localhost:8080**
+The application will start on **http://localhost:8081**
 
 ### 4. Run Tests
 ```bash
@@ -205,7 +205,7 @@ All endpoints use JSON for request/response bodies.
 
 ### Base URL
 ```
-http://localhost:8080/api/products
+http://localhost:8081/api/products
 ```
 
 ### Endpoints
@@ -362,57 +362,9 @@ This project demonstrates:
 9. **Logging** - Structured logging with SLF4J
 10. **AI-Assisted Development** - Using prompts to guide code generation
 
-## 🔧 Configuration
-
-### Application Properties
-Edit `src/main/resources/application.properties` to customize:
-- Server port (default: 8080)
-- Database configuration (H2 defaults)
-- Logging levels
-
-### H2 Console
-Access the H2 database console during development:
-```
-http://localhost:8080/h2-console
-```
-
-Credentials:
-- JDBC URL: `jdbc:h2:mem:testdb`
-- User: `sa`
-- Password: (leave empty)
-
-## 🚀 Next Steps & Extensions
-
-This template can be extended with:
-
-- **Authentication & Authorization** - Spring Security integration
-- **API Documentation** - Springdoc OpenAPI / Swagger UI
-- **Caching** - Spring Cache or Redis integration
-- **Async Processing** - @Async and CompletableFuture
-- **Event-Driven Architecture** - Message brokers (RabbitMQ, Kafka)
-- **Microservices** - Spring Cloud for distributed systems
-- **Database Migrations** - Flyway or Liquibase
-- **Monitoring & Metrics** - Spring Boot Actuator & Micrometer
-- **GraphQL** - GraphQL API instead of REST
-
 ## 📄 License
 
 This project is provided as-is for educational and demonstration purposes.
-
-## 🤝 Contributing
-
-1. Follow the architectural patterns documented in `.github/copilot-instructions.md`
-2. Use the prompts in `.github/prompts/` as examples for generating new features
-3. Ensure all code follows the layered architecture
-4. Add unit tests for all new features
-5. Update documentation when adding new endpoints
-
-## 📞 Support
-
-For questions or issues:
-1. Review `.github/copilot-instructions.md` for architectural guidelines
-2. Check the test cases in `src/test/` for usage examples
-3. Refer to the Postman collection for API endpoint examples
 
 ---
 
